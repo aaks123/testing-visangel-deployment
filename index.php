@@ -1,6 +1,1 @@
-<?php 
-$app->get('/', function() use($app) {
-  return index.html;
-});
-?>
-
+<?php include_once("index.html"); ?>
