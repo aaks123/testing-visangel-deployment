@@ -14,7 +14,8 @@
         }
         });
         V.on("payment.success", function(payment) {
-        document.write("payment.success: \n" + JSON.stringify(payment));
+        document.write("payment.success: \n"); 
+        //JSON.stringify(payment,null,2);
         callid = JSON.parse(payment).callid;
         document.write("callid : "+callid.toString());
         });
