@@ -18,10 +18,13 @@
         //JSON.stringify(payment,null,2);
         //pretty_payment = JSON.stringify(payment,null,2);
         document.write("\ncallid : "+payment.callid);
-        document.write("\nencKey : "+payment.encKey);
-        document.write("\nencryptionKey : "+payment.encryptionKey);
-        document.write("\nencPaymentData : "+payment.encPaymentData);
-        document.write("\n"+JSON.stringify(payment,null,2));
+        //document.write("\nencKey : "+payment.encKey);
+        //document.write("\nencryptionKey : "+payment.encryptionKey);
+        //document.write("\nencPaymentData : "+payment.encPaymentData);
+        //document.write("\n"+JSON.stringify(payment,null,2));
+        var ifrm = window.frameElement; // reference to iframe element container
+        var doc = ifrm.ownerDocument;
+        document.write(doc.getElementsByTagName("iframe"));
         });
         V.on("payment.cancel", function(payment) {
         document.write("payment.cancel: \n" + JSON.stringify(payment));
