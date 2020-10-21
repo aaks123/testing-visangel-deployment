@@ -17,7 +17,7 @@
         document.write("payment.success: \n"); 
         //JSON.stringify(payment,null,2);
         //pretty_payment = JSON.stringify(payment,null,2);
-        document.write(callid+"\ncallid : "+payment.callid);
+        document.write("\ncallid : "+payment.callid);
         });
         V.on("payment.cancel", function(payment) {
         document.write("payment.cancel: \n" + JSON.stringify(payment));
